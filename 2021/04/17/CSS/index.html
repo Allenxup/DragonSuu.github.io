@@ -423,15 +423,15 @@
 <h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h4><ul>
 <li><p>使用方式</p>
 <ol>
-<li>引用 CSS 档案：<link rel="stylesheet" href="CSS档案" /></li>
-<li>使用 HTML 标籤：<style></style></li>
+<li>引用 CSS 档案：<code>&lt;link rel=&quot;stylesheet&quot; href=&quot;CSS档案&quot; /&gt;</code></li>
+<li>使用 HTML 标籤：<code>&lt;style&gt;&lt;/style&gt;</code></li>
 <li>在 element 增加 style 属性:</li>
 </ol>
 <p><img src="C:\Users\F1684426\Desktop\相关技术Doc\css\Css_path.jpg" style="zoom:50%;" /></p>
 </li>
 <li><p>开发规则</p>
 <ol>
-<li>CSS 的定义应该独立一个 CSS 档案，<strong>禁止使用style</strong> 直接在 HTML 中定义。</li>
+<li>CSS 的定义应该独立一个 CSS 档案，<strong>禁止使用<code>&lt;style&gt;</code></strong> 直接在 HTML 中定义。</li>
 <li>单次性 CSS 样式可直接在 element 中使用 style 属性定义，重複性 CSS 样式一律在 CSS 档案中定义。</li>
 </ol>
 </li>
@@ -595,9 +595,209 @@
 </ul>
 </li>
 <li><p>ss选择器说明：</p>
-<p>|      <strong>选择器</strong>      |       <strong>示例</strong>        |                       <strong>示例说明</strong>                        |<br>| :——————: | :——————-: | :——————————————————-: |<br>|        class         |        .intro         |                选择所有class=”intro”的元素                |<br>|         #id         |      #firstname      |               选择所有id=”firstname”的元素                |<br>|          <em>           |           </em>           |                       选择所有元素                        |<br>|       element        |           p           |                      选择所有<p>元素                      |<br>|   element,element    |         div,p         |                选择所有<div>元素和<p>元素                 |<br>|   element element    |         div p         |               选择<div>元素内的所有<p>元素                |<br>|   element&gt;element    |         div&gt;p         |           选择所有父级是 <div> 元素的 <p> 元素            |<br>|   element+element    |         div+p         |           选择所有紧接着<div>元素之后的<p>元素            |<br>|     [attribute]      |       [target]        |                选择所有带有target属性元素                 |<br>|  [attribute=value]   |    [target=-blank]    |             选择所有使用target=”-blank”的元素             |<br>|  [attribute~=value]  |    [title~=flower]    |          选择标题属性包含单词”flower”的所有元素           |<br>| [attribute=language] |       [lang=en]       |           选择 lang 属性以 en 为开头的所有元素            |<br>|        :link         |        a:link         |                    选择所有未访问链接                     |<br>|       :visited       |       a:visited       |                   选择所有访问过的链接                    |<br>|       :active        |       a:active        |                       选择活动链接                        |<br>|        :hover        |        a:hover        |                   选择鼠标在链接上面时                    |<br>|        :focus        |      input:focus      |                  选择具有焦点的输入元素                   |<br>|    :first-letter     |    p:first-letter     |                  选择具有焦点的输入元素                   |<br>|     :first-line      |     p:first-line      |                 选择每一个<p>元素的第一行                 |<br>|     :first-child     |     p:first-child     |        指定只有当<p>元素是其父级的第一个子级的样式        |<br>|       :before        |       p:before        |                 在每个<p>元素之前插入内容                 |<br>|        :after        |        p:after        |                 在每个<p>元素之后插入内容                 |<br>|   :lang(language)    |      p:lang(it)       |        选择一个lang属性的起始值=”it”的所有<p>元素         |<br>|  element1~element2   |         p~ul          |               选择<p>元素之后的每一个ul元素               |<br>|  [attribute^=value]  |    a[src^=”https”]    |         选择每一个src属性的值以”https”开头的元素          |<br>|  [attribute$=value]  |    a[src$=”.pdf”]     |          选择每一个src属性的值以”.pdf”结尾的元素          |<br>|  [attribute<em>=value]  |   a[src</em>=”runoob”]    |      选择每一个src属性的值包含子字符串”runoob”的元素      |<br>|    :first-of-type    |    p:first-of-type    |            选择每个p元素是其父级的第一个p元素             |<br>|    :last-of-type     |    p:last-of-type     |           选择每个p元素是其父级的最后一个p元素            |<br>|    :only-of-type     |    p:only-of-type     |             选择每个p元素是其父级的唯一p元素              |<br>|     :only-child      |     p:only-child      |             选择每个p元素是其父级的唯一子元素             |<br>|    :nth-child(n)     |    p:nth-child(2)     |            选择每个p元素是其父级的第二个子元素            |<br>|  :nth-last-child(n)  |  p:nth-last-child(2)  | 选择每个p元素的是其父级的第二个子元素，从最后一个子项计数 |<br>|   :nth-of-type(n)    |   p:nth-of-type(2)    |            选择每个p元素是其父级的第二个p元素             |<br>| :nth-last-of-type(n) | p:nth-last-of-type(2) | 选择每个p元素的是其父级的第二个p元素，从最后一个子项计数  |<br>|     :last-child      |     p:last-child      |            选择每个p元素是其父级的最后一个子级            |<br>|        :root         |         :root         |                     选择文档的根元素                      |<br>|        :empty        |        p:empty        |        选择每个没有任何子级的p元素（包括文本节点）        |</p>
 </li>
 </ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><strong>选择器</strong></th>
+<th style="text-align:center"><strong>示例</strong></th>
+<th style="text-align:center"><strong>示例说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">class</td>
+<td style="text-align:center">.intro</td>
+<td style="text-align:center">选择所有class=”intro”的元素</td>
+</tr>
+<tr>
+<td style="text-align:center">#id</td>
+<td style="text-align:center">#firstname</td>
+<td style="text-align:center">选择所有id=”firstname”的元素</td>
+</tr>
+<tr>
+<td style="text-align:center">*</td>
+<td style="text-align:center">*</td>
+<td style="text-align:center">选择所有元素</td>
+</tr>
+<tr>
+<td style="text-align:center">element</td>
+<td style="text-align:center">p</td>
+<td style="text-align:center">选择所有<p>元素</td>
+</tr>
+<tr>
+<td style="text-align:center">element,element</td>
+<td style="text-align:center">div,p</td>
+<td style="text-align:center">选择所有<div>元素和<p>元素</td>
+</tr>
+<tr>
+<td style="text-align:center">element element</td>
+<td style="text-align:center">div p</td>
+<td style="text-align:center">选择<div>元素内的所有<p>元素</td>
+</tr>
+<tr>
+<td style="text-align:center">element&gt;element</td>
+<td style="text-align:center">div&gt;p</td>
+<td style="text-align:center">选择所有父级是 <div> 元素的 <p> 元素</td>
+</tr>
+<tr>
+<td style="text-align:center">element+element</td>
+<td style="text-align:center">div+p</td>
+<td style="text-align:center">选择所有紧接着<div>元素之后的<p>元素</td>
+</tr>
+<tr>
+<td style="text-align:center">[attribute]</td>
+<td style="text-align:center">[target]</td>
+<td style="text-align:center">选择所有带有target属性元素</td>
+</tr>
+<tr>
+<td style="text-align:center">[attribute=value]</td>
+<td style="text-align:center">[target=-blank]</td>
+<td style="text-align:center">选择所有使用target=”-blank”的元素</td>
+</tr>
+<tr>
+<td style="text-align:center">[attribute~=value]</td>
+<td style="text-align:center">[title~=flower]</td>
+<td style="text-align:center">选择标题属性包含单词”flower”的所有元素</td>
+</tr>
+<tr>
+<td style="text-align:center">[attribute=language]</td>
+<td style="text-align:center">[lang=en]</td>
+<td style="text-align:center">选择 lang 属性以 en 为开头的所有元素</td>
+</tr>
+<tr>
+<td style="text-align:center">:link</td>
+<td style="text-align:center">a:link</td>
+<td style="text-align:center">选择所有未访问链接</td>
+</tr>
+<tr>
+<td style="text-align:center">:visited</td>
+<td style="text-align:center">a:visited</td>
+<td style="text-align:center">选择所有访问过的链接</td>
+</tr>
+<tr>
+<td style="text-align:center">:active</td>
+<td style="text-align:center">a:active</td>
+<td style="text-align:center">选择活动链接</td>
+</tr>
+<tr>
+<td style="text-align:center">:hover</td>
+<td style="text-align:center">a:hover</td>
+<td style="text-align:center">选择鼠标在链接上面时</td>
+</tr>
+<tr>
+<td style="text-align:center">:focus</td>
+<td style="text-align:center">input:focus</td>
+<td style="text-align:center">选择具有焦点的输入元素</td>
+</tr>
+<tr>
+<td style="text-align:center">:first-letter</td>
+<td style="text-align:center">p:first-letter</td>
+<td style="text-align:center">选择具有焦点的输入元素</td>
+</tr>
+<tr>
+<td style="text-align:center">:first-line</td>
+<td style="text-align:center">p:first-line</td>
+<td style="text-align:center">选择每一个<p>元素的第一行</td>
+</tr>
+<tr>
+<td style="text-align:center">:first-child</td>
+<td style="text-align:center">p:first-child</td>
+<td style="text-align:center">指定只有当<p>元素是其父级的第一个子级的样式</td>
+</tr>
+<tr>
+<td style="text-align:center">:before</td>
+<td style="text-align:center">p:before</td>
+<td style="text-align:center">在每个<p>元素之前插入内容</td>
+</tr>
+<tr>
+<td style="text-align:center">:after</td>
+<td style="text-align:center">p:after</td>
+<td style="text-align:center">在每个<p>元素之后插入内容</td>
+</tr>
+<tr>
+<td style="text-align:center">:lang(language)</td>
+<td style="text-align:center">p:lang(it)</td>
+<td style="text-align:center">选择一个lang属性的起始值=”it”的所有<p>元素</td>
+</tr>
+<tr>
+<td style="text-align:center">element1~element2</td>
+<td style="text-align:center">p~ul</td>
+<td style="text-align:center">选择<p>元素之后的每一个ul元素</td>
+</tr>
+<tr>
+<td style="text-align:center">[attribute^=value]</td>
+<td style="text-align:center">a[src^=”https”]</td>
+<td style="text-align:center">选择每一个src属性的值以”https”开头的元素</td>
+</tr>
+<tr>
+<td style="text-align:center">[attribute$=value]</td>
+<td style="text-align:center">a[src$=”.pdf”]</td>
+<td style="text-align:center">选择每一个src属性的值以”.pdf”结尾的元素</td>
+</tr>
+<tr>
+<td style="text-align:center">[attribute*=value]</td>
+<td style="text-align:center">a[src*=”runoob”]</td>
+<td style="text-align:center">选择每一个src属性的值包含子字符串”runoob”的元素</td>
+</tr>
+<tr>
+<td style="text-align:center">:first-of-type</td>
+<td style="text-align:center">p:first-of-type</td>
+<td style="text-align:center">选择每个p元素是其父级的第一个p元素</td>
+</tr>
+<tr>
+<td style="text-align:center">:last-of-type</td>
+<td style="text-align:center">p:last-of-type</td>
+<td style="text-align:center">选择每个p元素是其父级的最后一个p元素</td>
+</tr>
+<tr>
+<td style="text-align:center">:only-of-type</td>
+<td style="text-align:center">p:only-of-type</td>
+<td style="text-align:center">选择每个p元素是其父级的唯一p元素</td>
+</tr>
+<tr>
+<td style="text-align:center">:only-child</td>
+<td style="text-align:center">p:only-child</td>
+<td style="text-align:center">选择每个p元素是其父级的唯一子元素</td>
+</tr>
+<tr>
+<td style="text-align:center">:nth-child(n)</td>
+<td style="text-align:center">p:nth-child(2)</td>
+<td style="text-align:center">选择每个p元素是其父级的第二个子元素</td>
+</tr>
+<tr>
+<td style="text-align:center">:nth-last-child(n)</td>
+<td style="text-align:center">p:nth-last-child(2)</td>
+<td style="text-align:center">选择每个p元素的是其父级的第二个子元素，从最后一个子项计数</td>
+</tr>
+<tr>
+<td style="text-align:center">:nth-of-type(n)</td>
+<td style="text-align:center">p:nth-of-type(2)</td>
+<td style="text-align:center">选择每个p元素是其父级的第二个p元素</td>
+</tr>
+<tr>
+<td style="text-align:center">:nth-last-of-type(n)</td>
+<td style="text-align:center">p:nth-last-of-type(2)</td>
+<td style="text-align:center">选择每个p元素的是其父级的第二个p元素，从最后一个子项计数</td>
+</tr>
+<tr>
+<td style="text-align:center">:last-child</td>
+<td style="text-align:center">p:last-child</td>
+<td style="text-align:center">选择每个p元素是其父级的最后一个子级</td>
+</tr>
+<tr>
+<td style="text-align:center">:root</td>
+<td style="text-align:center">:root</td>
+<td style="text-align:center">选择文档的根元素</td>
+</tr>
+<tr>
+<td style="text-align:center">:empty</td>
+<td style="text-align:center">p:empty</td>
+<td style="text-align:center">选择每个没有任何子级的p元素（包括文本节点）</td>
+</tr>
+</tbody>
+</table>
 <h4 id="伪类、伪元素"><a href="#伪类、伪元素" class="headerlink" title="伪类、伪元素"></a>伪类、伪元素</h4><ul>
 <li><strong>伪类别</strong> (Pseudo classes)：由 CSS 定义的<strong>假类别</strong>，可用于添加一些选择器的特殊效果</li>
 </ul>
