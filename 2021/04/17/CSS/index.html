@@ -1,0 +1,2197 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="CSS, 无名小栈">
+    <meta name="description" content="九江职业技术学院 | 软件设计 | SZ打工人 | 记录生活 | 分享技术">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>CSS | 无名小栈</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">无名小栈</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">无名小栈</div>
+        <div class="logo-desc">
+            
+            九江职业技术学院 | 软件设计 | SZ打工人 | 记录生活 | 分享技术
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/4.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">CSS</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">
+                                <span class="chip bg-color">技术分享</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-04-17
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2021-04-17
+                </div>
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>CSS（Cascading Style Sheets）：层迭样式表，定义如何显示<a target="_blank" rel="noopener" href="https://10.151.110.165/wiki/index.php/HTML">HTML</a>元素，样式通常存储在样式表中，解决内容与表现分离的问题，多个样式定义可层迭为一个。主要目的在于增加开发速度、易维护、易变更样式。</p>
+<hr>
+<h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h4><ul>
+<li><p>使用方式</p>
+<ol>
+<li>引用 CSS 档案：<link rel="stylesheet" href="CSS档案" /></li>
+<li>使用 HTML 标籤：<style></style></li>
+<li>在 element 增加 style 属性:</li>
+</ol>
+<p><img src="C:\Users\F1684426\Desktop\相关技术Doc\css\Css_path.jpg" style="zoom:50%;" /></p>
+</li>
+<li><p>开发规则</p>
+<ol>
+<li>CSS 的定义应该独立一个 CSS 档案，<strong>禁止使用</strong> <style> 直接在 HTML 中定义。</li>
+<li>单次性 CSS 样式可直接在 element 中使用 style 属性定义，重複性 CSS 样式一律在 CSS 档案中定义。</li>
+</ol>
+</li>
+<li><p>命名规则</p>
+<ul>
+<li><p>常用命名范围</p>
+<p> —id</p>
+<p>—class</p>
+</li>
+</ul>
+</li>
+<li><p>命名规则</p>
+<p>​       —小写英文字母</p>
+<p>​       —「-」</p>
+</li>
+<li><p>范例</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>user-id<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>my-id<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>my-class<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p>格式</p>
+<ul>
+<li>CSS 规则由两个主要的部分构成：<strong>选择器</strong>，以及一条或多条<strong>声明</strong>:</li>
+</ul>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">h1</span><span class="token punctuation">&#123;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 12px<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>组成元素</p>
+<p>​        选择器 (Selector)</p>
+<ul>
+<li>取得<a target="_blank" rel="noopener" href="https://10.151.110.165/wiki/index.php/HTML">HTML</a>中的 Elements</li>
+<li>选择核心：<strong>id</strong>、 <strong>class</strong>、 标籤名称 (tag name)、标籤属性</li>
+</ul>
+</li>
+<li><p>全部选取</p>
+<ul>
+<li>所有元素皆套用此 CSS 定义</li>
+</ul>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">*</span><span class="token punctuation">&#123;</span>
+   ...
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>以 id 选取</p>
+<ul>
+<li>需先在 element 上给予 id 属性，HTML元素以id属性来设置id选择器，CSS中id选择器以“<strong>#</strong>”来定义</li>
+<li>唯一性：同一个网页相同 id 的 element 只能有一个</li>
+</ul>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token comment">/** 在css中 **/</span>
+<span class="token selector">#tag-id</span><span class="token punctuation">&#123;</span>
+  ……
+<span class="token punctuation">&#125;</span>
+<span class="token comment">/** 在html中 **/</span>
+&lt;tag id=<span class="token string">"tag-id"</span>>&lt;/tag><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>以 class 选取</p>
+<ul>
+<li><p>需先在 element 上给予 class 属性,HTML元素以class属性来设置id选择器，CSS中class选择器以“<strong>.</strong>”来定义</p>
+</li>
+<li><p>重複性：</p>
+<ul>
+<li>一个 class 可以被很多个 element 使用</li>
+<li>一个 element 可以有很多个 class (以空白间隔)</li>
+</ul>
+</li>
+</ul>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token comment">/** 在css中 **/</span>
+<span class="token selector">.class-name</span><span class="token punctuation">&#123;</span>
+  ……
+<span class="token punctuation">&#125;</span>
+<span class="token comment">/** 在html中 **/</span>
+&lt;tag class=<span class="token string">"class-name1class-name2class-name3"</span>>&lt;/tag><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>以标籤名称选取 (tag name)</p>
+<ul>
+<li>所有相同的标籤名称都会被选取</li>
+</ul>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">tag-name</span><span class="token punctuation">&#123;</span>
+  ……
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>以属性选取 (attribute)</p>
+<ul>
+<li>所有具有该属性，不论属性值为何都会被选取</li>
+</ul>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">[tag-attribute]</span><span class="token punctuation">&#123;</span>
+  ……
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>以属性值选取 (attribute-value)</p>
+</li>
+<li><p>符合指定属性与其属性值的元素才会被选取</p>
+</li>
+<li><p>运算子</p>
+<ul>
+<li>= 完全相符关键字</li>
+<li>*= 完全相符关键字，或包含「关键字」</li>
+<li>~= 完全相符关键字，或包含「关键字」 「关键字 」「关键字 」</li>
+<li>^= 完全相符关键字，或以「关键字」开头</li>
+<li>|= 完全相符关键字，或以「关键字」「关键字-」开头</li>
+<li>$= 完全相符关键字，或以「关键字」结尾</li>
+</ul>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">[tag-attribute=keyword]</span><span class="token punctuation">&#123;</span>
+  ……
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>执行</p>
+<ul>
+<li><p>执行效率(由快到慢)</p>
+<ol>
+<li>id (#)</li>
+<li>class (.)</li>
+<li>tag (tag-name)</li>
+<li>Sibling Selector (+)</li>
+<li>Child (&gt;)</li>
+<li>Descendant ()</li>
+<li>Universal (*)</li>
+<li>Attribute (attribute=”value”)</li>
+</ol>
+</li>
+<li><p>执行方式</p>
+<ul>
+<li><p>关键选择器 (Key Selector)</p>
+<ul>
+<li>连续选择器中最右边的选择器</li>
+<li>Browser 第一个寻找的规则</li>
+</ul>
+</li>
+<li><p>过分限制</p>
+<ul>
+<li>撰写多馀不必要的 Selector</li>
+</ul>
+</li>
+<li><p>由右至左执行</p>
+<p>​        效率差</p>
+<p>​        执行步骤（#nava）</p>
+<ol>
+<li>先找出 document 中所有的 a</li>
+<li>再回到 Dom Tree 中看看哪个 a 住在 #nav 下</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src=".\css\Css_carry.jpg" style="zoom:50%;" /></p>
+<ul>
+<li><p>注意事项</p>
+<ul>
+<li>模糊选取：<ul>
+<li>共用型样式</li>
+<li>日后增加的元素也会套用的样式</li>
+</ul>
+</li>
+<li>精准选取<ul>
+<li>专属型样式</li>
+<li>不被其他元素套用的样式</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>ss选择器说明：</p>
+<p>|      <strong>选择器</strong>      |       <strong>示例</strong>        |                       <strong>示例说明</strong>                        |<br>| :——————: | :——————-: | :——————————————————-: |<br>|        class         |        .intro         |                选择所有class=”intro”的元素                |<br>|         #id         |      #firstname      |               选择所有id=”firstname”的元素                |<br>|          <em>           |           </em>           |                       选择所有元素                        |<br>|       element        |           p           |                      选择所有<p>元素                      |<br>|   element,element    |         div,p         |                选择所有<div>元素和<p>元素                 |<br>|   element element    |         div p         |               选择<div>元素内的所有<p>元素                |<br>|   element&gt;element    |         div&gt;p         |           选择所有父级是 <div> 元素的 <p> 元素            |<br>|   element+element    |         div+p         |           选择所有紧接着<div>元素之后的<p>元素            |<br>|     [attribute]      |       [target]        |                选择所有带有target属性元素                 |<br>|  [attribute=value]   |    [target=-blank]    |             选择所有使用target=”-blank”的元素             |<br>|  [attribute~=value]  |    [title~=flower]    |          选择标题属性包含单词”flower”的所有元素           |<br>| [attribute=language] |       [lang=en]       |           选择 lang 属性以 en 为开头的所有元素            |<br>|        :link         |        a:link         |                    选择所有未访问链接                     |<br>|       :visited       |       a:visited       |                   选择所有访问过的链接                    |<br>|       :active        |       a:active        |                       选择活动链接                        |<br>|        :hover        |        a:hover        |                   选择鼠标在链接上面时                    |<br>|        :focus        |      input:focus      |                  选择具有焦点的输入元素                   |<br>|    :first-letter     |    p:first-letter     |                  选择具有焦点的输入元素                   |<br>|     :first-line      |     p:first-line      |                 选择每一个<p>元素的第一行                 |<br>|     :first-child     |     p:first-child     |        指定只有当<p>元素是其父级的第一个子级的样式        |<br>|       :before        |       p:before        |                 在每个<p>元素之前插入内容                 |<br>|        :after        |        p:after        |                 在每个<p>元素之后插入内容                 |<br>|   :lang(language)    |      p:lang(it)       |        选择一个lang属性的起始值=”it”的所有<p>元素         |<br>|  element1~element2   |         p~ul          |               选择<p>元素之后的每一个ul元素               |<br>|  [attribute^=value]  |    a[src^=”https”]    |         选择每一个src属性的值以”https”开头的元素          |<br>|  [attribute$=value]  |    a[src$=”.pdf”]     |          选择每一个src属性的值以”.pdf”结尾的元素          |<br>|  [attribute<em>=value]  |   a[src</em>=”runoob”]    |      选择每一个src属性的值包含子字符串”runoob”的元素      |<br>|    :first-of-type    |    p:first-of-type    |            选择每个p元素是其父级的第一个p元素             |<br>|    :last-of-type     |    p:last-of-type     |           选择每个p元素是其父级的最后一个p元素            |<br>|    :only-of-type     |    p:only-of-type     |             选择每个p元素是其父级的唯一p元素              |<br>|     :only-child      |     p:only-child      |             选择每个p元素是其父级的唯一子元素             |<br>|    :nth-child(n)     |    p:nth-child(2)     |            选择每个p元素是其父级的第二个子元素            |<br>|  :nth-last-child(n)  |  p:nth-last-child(2)  | 选择每个p元素的是其父级的第二个子元素，从最后一个子项计数 |<br>|   :nth-of-type(n)    |   p:nth-of-type(2)    |            选择每个p元素是其父级的第二个p元素             |<br>| :nth-last-of-type(n) | p:nth-last-of-type(2) | 选择每个p元素的是其父级的第二个p元素，从最后一个子项计数  |<br>|     :last-child      |     p:last-child      |            选择每个p元素是其父级的最后一个子级            |<br>|        :root         |         :root         |                     选择文档的根元素                      |<br>|        :empty        |        p:empty        |        选择每个没有任何子级的p元素（包括文本节点）        |</p>
+</li>
+</ul>
+<h4 id="伪类、伪元素"><a href="#伪类、伪元素" class="headerlink" title="伪类、伪元素"></a>伪类、伪元素</h4><ul>
+<li><strong>伪类别</strong> (Pseudo classes)：由 CSS 定义的<strong>假类别</strong>，可用于添加一些选择器的特殊效果</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><strong>选择器</strong></th>
+<th style="text-align:center"><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:hover</td>
+<td style="text-align:center">当滑鼠移过元素时</td>
+</tr>
+<tr>
+<td style="text-align:center">:focus</td>
+<td style="text-align:center">当元素被 focus 时</td>
+</tr>
+<tr>
+<td style="text-align:center">:active</td>
+<td style="text-align:center">当元素执行时</td>
+</tr>
+<tr>
+<td style="text-align:center">:target</td>
+<td style="text-align:center">当元素被呼叫时</td>
+</tr>
+<tr>
+<td style="text-align:center">:first-child</td>
+<td style="text-align:center">当元素为第一个子节点时</td>
+</tr>
+<tr>
+<td style="text-align:center">:last-child</td>
+<td style="text-align:center">当元素为最后一个子节点时</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>伪元素</strong> (Pseudo elements)：由 CSS 定义的<strong>假元素</strong> (不存在HTML内)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><strong>选择器</strong></th>
+<th style="text-align:center"><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:first-line</td>
+<td style="text-align:center">第一行</td>
+</tr>
+<tr>
+<td style="text-align:center">:first-letter</td>
+<td style="text-align:center">第一个字</td>
+</tr>
+<tr>
+<td style="text-align:center">:before</td>
+<td style="text-align:center">元素内容之前</td>
+</tr>
+<tr>
+<td style="text-align:center">:after</td>
+<td style="text-align:center">元素内容之后</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Box-Model"><a href="#Box-Model" class="headerlink" title="Box Model"></a>Box Model</h3><ul>
+<li><p>所有<a target="_blank" rel="noopener" href="https://10.151.110.165/wiki/index.php/HTML">HTML</a>元素可以看作盒子，在css中Box Model是用来设计和佈局时使用的，盒子模型允许我们在其它元素和周围元素边框之间的空间放置元素</p>
+</li>
+<li><p>Element 组成要素</p>
+</li>
+</ul>
+<p><img src="./css/Box_element.jpg" alt=""></p>
+<ul>
+<li>margin 外边距:框线 (border) 到父节点 (parent node) 或相邻节点 (sibling node) 的距离</li>
+</ul>
+<p><img src="./css/Box_margin.jpg" alt=""></p>
+<ul>
+<li>border 框线</li>
+</ul>
+<p><img src="./css/Box_border.jpg" alt=""></p>
+<ul>
+<li>padding 内边距:内容 (inner HTML) 到框线 (border) 的距离</li>
+</ul>
+<p><img src="./css/Box_padding.jpg" alt=""></p>
+<ul>
+<li><p>inner HTML 内容</p>
+<p>height:内容 (inner HTML) 的高度 (height)</p>
+</li>
+</ul>
+<p><img src="./css/Box_height.jpg" alt=""></p>
+<p>​     width:内容 (inner HTML) 的宽度 (Width)</p>
+<p><img src="./css/Box_width.jpg" alt=""></p>
+<p>​     Outer Height:元素实际佔用高度，包含 margin, border, padding, height</p>
+<p><img src="./css/Box_out_height.jpg" alt=""></p>
+<ul>
+<li>background:元素背景，包含 border, padding, innerHTML</li>
+</ul>
+<p><img src="./css/Box_bgcolor.jpg" alt=""></p>
+<ul>
+<li>最大值和最小值<ul>
+<li>max-width 最大宽度</li>
+<li>min-width 最小宽度</li>
+<li>max-height 最大高度</li>
+<li>min-height 最小高度</li>
+</ul>
+</li>
+</ul>
+<h3 id="样式申明"><a href="#样式申明" class="headerlink" title="样式申明"></a>样式申明</h3><hr>
+<h4 id="文字样式"><a href="#文字样式" class="headerlink" title="文字样式"></a>文字样式</h4><ul>
+<li><p>color文字颜色</p>
+<p>Color name:black blue red等</p>
+<p>rgb:(Red,Green,Blue)</p>
+<p>rgba:(Red,Green,Blue,Alpha “0~1之间的值，0 完全透明，1完全不透明”)</p>
+<p>Hex:#ffffff</p>
+</li>
+<li><p>font 字体样式</p>
+<p>font-style字元样式:normal正常(default),italic斜体,</p>
+<p>font-weight字元粗细:normal正常 (default),bold粗,bolder更粗</p>
+<p>font-size字元大小</p>
+<p>font-family字体 (应搭配 @font-face)</p>
+<ul>
+<li>@font-face定义字体 (使用者不需安装字体)</li>
+</ul>
+</li>
+</ul>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token comment">/**
+    font-family		字体名称
+    src			路径
+    font-stretch		拉伸字体
+    font-style		字体样式
+    font-weight		字体粗细
+**/</span>
+<span class="token atrule"><span class="token rule">@font-face</span></span><span class="token punctuation">&#123;</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> myFirstFont<span class="token punctuation">;</span>
+    <span class="token property">src</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">'字体档路径'</span><span class="token punctuation">)</span></span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="text文本样式"><a href="#text文本样式" class="headerlink" title="text文本样式"></a>text文本样式</h4><hr>
+<ul>
+<li><p>text-indent 首行缩排</p>
+</li>
+<li><p>text-align 水平对齐</p>
+<p>—left 置左 (default)</p>
+<p>—center 置中</p>
+<p>—right 置右</p>
+</li>
+<li><p>text-shadow 文字阴影</p>
+<p>—h-shadow v-shadow blur color（说明：水平阴影位置 垂直阴影位置 模糊范围 (值越大越模糊) 阴影颜色）</p>
+</li>
+<li><p>text-transform 字母大小写</p>
+<p>—none 依程式码 (default)</p>
+<p>—uppercase 大写</p>
+<p>—lowercase 小写</p>
+<p>—capitalize 首字大写</p>
+</li>
+<li><p>text-decoration 字元装饰</p>
+<p>—none 不装饰 (default)</p>
+<p>—underline 底线</p>
+<p>—overline 顶线</p>
+<p>—line-through 删除线</p>
+</li>
+<li><p>letter-spacing 字元间距</p>
+</li>
+<li><p>line-height 行高</p>
+</li>
+<li><p>Column 栏样式</p>
+<p>—column-width 以宽度分栏</p>
+<p>—column-count 栏数</p>
+<p>—column-gap 栏间隔</p>
+<p>—column-rule 分栏样式</p>
+<ul>
+<li>width style color （说明：宽度 样式 颜色）</li>
+<li>column-span 横跨分栏</li>
+</ul>
+</li>
+</ul>
+<h4 id="background属性"><a href="#background属性" class="headerlink" title="background属性"></a>background属性</h4><hr>
+<ul>
+<li><p>background-color 背景颜色</p>
+</li>
+<li><p>background-clip 背景范围</p>
+<p>—border-box 框线内含 (default)</p>
+<p>—ontent-box 内容</p>
+<p>—padding-box 内边距内</p>
+</li>
+<li><p>background-image 背景图片</p>
+<p>—url(‘图片路径’)</p>
+</li>
+<li><p>background-size 背景图片大小</p>
+</li>
+<li><p>background-repeat 背景图片重複</p>
+<p>—no-repeat 不重複</p>
+<p>—repeat-x 横向重複</p>
+<p>—repeat-y 纵向重複</p>
+<p>—repeat 横纵向重複 (default)</p>
+</li>
+<li><p>background-position 背景图片位子</p>
+<p>—x, y</p>
+<p>—center</p>
+<p>—top</p>
+<p>—bottom</p>
+<p>—right</p>
+<p>—left</p>
+</li>
+<li><p>background-attachment 固定背景图片</p>
+<p>—fixed 固定 (随著卷轴移动)</p>
+</li>
+<li><p>opacity 透明度</p>
+<p>—0~1 之间的值</p>
+<p>—0 完全透明，1完全不透明</p>
+</li>
+</ul>
+<h4 id="list列表属性"><a href="#list列表属性" class="headerlink" title="list列表属性"></a>list列表属性</h4><hr>
+<ul>
+<li><p>list-style-type 项目标记类型</p>
+</li>
+<li><p>list-style-image 以图片作为项目标记</p>
+</li>
+<li><p>list-style-position 项目标记显示位置</p>
+<p>—inside 内置</p>
+<p>—outside 外置 (default)</p>
+</li>
+<li><p>list-style-type 项目标记类型</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><strong>value</strong></th>
+<th style="text-align:center"><strong>description</strong></th>
+<th style="text-align:center">value</th>
+<th style="text-align:center"><strong>description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">none</td>
+<td style="text-align:center">无标记</td>
+<td style="text-align:center">lower-roman</td>
+<td style="text-align:center">i.,ii.,iii.,iv.,v…</td>
+</tr>
+<tr>
+<td style="text-align:center">disc</td>
+<td style="text-align:center">实心圆</td>
+<td style="text-align:center">upper-roman</td>
+<td style="text-align:center">I.,II.,III.,IV.,V…</td>
+</tr>
+<tr>
+<td style="text-align:center">circle</td>
+<td style="text-align:center">空心圆</td>
+<td style="text-align:center">lower-alpha</td>
+<td style="text-align:center">a,b,c,d,e…</td>
+</tr>
+<tr>
+<td style="text-align:center">square</td>
+<td style="text-align:center">实心方块</td>
+<td style="text-align:center">upper-alpha</td>
+<td style="text-align:center">A,B,C,D,E…</td>
+</tr>
+<tr>
+<td style="text-align:center">decimal</td>
+<td style="text-align:center">1.,2.,3.,4.,5…</td>
+<td style="text-align:center">lower-greek</td>
+<td style="text-align:center">小写希腊文字</td>
+</tr>
+<tr>
+<td style="text-align:center">decimal-leading-zero</td>
+<td style="text-align:center">01.,02.,03.,04.,05…</td>
+<td style="text-align:center">cjk-ideographic</td>
+<td style="text-align:center">中国式数字</td>
+</tr>
+</tbody>
+</table>
+<h4 id="border-边框属性"><a href="#border-边框属性" class="headerlink" title="border 边框属性"></a>border 边框属性</h4><ul>
+<li><p>border 框线</p>
+<p>widthstylecolor</p>
+</li>
+<li><p>—border-width 宽度</p>
+</li>
+<li><p>—border-style 样式</p>
+</li>
+<li><p>—border-color 颜色</p>
+</li>
+<li><p>border-radius 圆弧角</p>
+</li>
+<li><p>border-style 框线样式</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><strong>value</strong></th>
+<th style="text-align:center"><strong>description</strong></th>
+<th style="text-align:center"><strong>value</strong></th>
+<th style="text-align:center"><strong>description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">none</td>
+<td style="text-align:center">default</td>
+<td style="text-align:center">groove</td>
+<td style="text-align:center">3D凹槽框线</td>
+</tr>
+<tr>
+<td style="text-align:center">hidden</td>
+<td style="text-align:center">隐藏</td>
+<td style="text-align:center">ridge</td>
+<td style="text-align:center">3D凸槽框线</td>
+</tr>
+<tr>
+<td style="text-align:center">dotted</td>
+<td style="text-align:center">点线</td>
+<td style="text-align:center">inset</td>
+<td style="text-align:center">3D凹槽框线</td>
+</tr>
+<tr>
+<td style="text-align:center">dashed</td>
+<td style="text-align:center">虚线</td>
+<td style="text-align:center">outset</td>
+<td style="text-align:center">3D凸槽框线</td>
+</tr>
+<tr>
+<td style="text-align:center">solid</td>
+<td style="text-align:center">实线</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">double</td>
+<td style="text-align:center">双实线</td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>side</li>
+</ul>
+<p><img src="./css/Side.jpg" style="zoom:50%;" /></p>
+<ul>
+<li><p>多种写法 border side × border attribute</p>
+<ul>
+<li><p>border-top</p>
+<p>​       border-top-width</p>
+<p>​       border-top-style</p>
+<p>​       border-top-color</p>
+</li>
+</ul>
+</li>
+<li><p>border-bottom</p>
+</li>
+<li><p>border-left</p>
+</li>
+<li><p>border-right</p>
+<ul>
+<li>合併定义写法<ul>
+<li>property: value;（全部）</li>
+<li>property: value1, value2;（上下, 左右）</li>
+<li>property: value1, value2, value3;（上, 左右, 下）</li>
+<li>property: value1, value2, value3, value4;（上, 右, 下, 左）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="border-image图片框线属性"><a href="#border-image图片框线属性" class="headerlink" title="border-image图片框线属性"></a>border-image图片框线属性</h4><ul>
+<li><p>border-image 图片框线</p>
+<p>​        source slice width outset repeat</p>
+</li>
+<li><p>border-image-source图片框线来源</p>
+</li>
+<li><p>border-image-slice向内偏移</p>
+<p>​        将图片分为九宫格拉伸</p>
+<p>​        值不可加单位</p>
+</li>
+<li><p>border-image-width宽度 (图片大小)</p>
+</li>
+<li><p>border-image-outset内容与图片框线距离</p>
+</li>
+<li><p>border-image-repeat图片框线填满</p>
+<p>​        —repeat重複填满</p>
+<p>​        —round铺满</p>
+<p>​        —stretch延展填满</p>
+</li>
+<li><p>需搭配 border使用</p>
+</li>
+</ul>
+<h4 id="Outline外框线属性"><a href="#Outline外框线属性" class="headerlink" title="Outline外框线属性"></a>Outline外框线属性</h4><ul>
+<li>outline-color轮廓颜色</li>
+<li>outline-style轮廓样式 (同框线样式)</li>
+<li>outline-width轮廓宽度</li>
+<li>outline-offset轮廓偏移量 (与框线距离)</li>
+</ul>
+<h4 id="box-shadow元素阴影属性"><a href="#box-shadow元素阴影属性" class="headerlink" title="box-shadow元素阴影属性"></a>box-shadow元素阴影属性</h4><ul>
+<li>h-shadow v-shadow blur spread color inset</li>
+<li>水平阴影位置 垂直阴影位置 模糊范围 阴影尺寸 阴影颜色 内部阴影</li>
+</ul>
+<h4 id="table表格属性"><a href="#table表格属性" class="headerlink" title="table表格属性"></a>table表格属性</h4><ul>
+<li><p>border-collapse 合併成单一边框</p>
+<p>​      —separate 分开边框 (default)</p>
+<p>​      —collapse 合併边框 (忽略 border-spacing)</p>
+</li>
+<li><p>border-spacing 储存格间距</p>
+</li>
+<li><p>caption-side 表格标题位置</p>
+<p>​      —top 上方 (default)</p>
+<p>​      —bottom 下方</p>
+</li>
+<li><p>empty-cells 显示空储存格</p>
+<p>​       —show 显示 (default)</p>
+<p>​       —hide 隐藏</p>
+</li>
+<li><p>table-layout 表格配置</p>
+<p>​       —automatic 依照储存格内容决定宽度 (default)</p>
+<p>​       —fixed 固定每个储存格宽度 (内容超出储存格)</p>
+</li>
+</ul>
+<h4 id="cursor游标样式"><a href="#cursor游标样式" class="headerlink" title="cursor游标样式"></a>cursor游标样式</h4><p><img src="./css/Cursor.jpg" alt=""></p>
+<h4 id="显示"><a href="#显示" class="headerlink" title="显示"></a>显示</h4><ul>
+<li><p>显示（Display）型态</p>
+<p>  每个 element 都有预设的型态，但可透过 display 改变</p>
+<p>  型态会影响 element 在网页版面中占用的空间</p>
+<p>常用型态</p>
+<ul>
+<li>span</li>
+<li>label</li>
+</ul>
+</li>
+<li><p>display: inline-block行内区块</p>
+<p>​     width 和 height 预设根据 element 内容决定</p>
+<p>​     可设定 width, height</p>
+<p>​      常用的 element</p>
+<ul>
+<li>input</li>
+</ul>
+</li>
+<li><p>display: block区块</p>
+<p>width 预设 100%</p>
+<p>height 根据 element 内容决定</p>
+<p>width 预设 100%</p>
+<p>可设定 width, height</p>
+<p>width 预设 100%</p>
+<p>下个元素从下行开始排列</p>
+<p>width 预设 100%</p>
+<p>常用的 element</p>
+<ul>
+<li>p</li>
+<li>div</li>
+<li>h1~h6</li>
+</ul>
+</li>
+<li><p>display: none隐藏</p>
+<p>不显示该元素，也不占用版面空间</p>
+</li>
+<li><p>visibility是否可见</p>
+<p>visible</p>
+<p>hidden</p>
+</li>
+<li><p>overflow卷轴</p>
+<p>auto自动卷轴，超出大小才显示卷轴 (default)</p>
+<p>scroll不论内容皆显示卷轴</p>
+<p>hidden隐藏卷轴截掉内容</p>
+<p>visible显示内容</p>
+</li>
+<li><p>resize允许使用者调整元素大小</p>
+<p>  none不允许调整 (default)</p>
+<p>  both允许调整宽度、高度</p>
+<p>  horizontal允许调整宽度</p>
+<p>  vertical允许调整高度</p>
+<p>  通常搭配 overflow: auto使用</p>
+</li>
+</ul>
+<h4 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h4><ul>
+<li><p>position位置</p>
+<ul>
+<li><p>static原本位置 (default)</p>
+</li>
+<li><p>relative相对位置 (相对原位置)</p>
+<p>相对于自我本身位置</p>
+<p>保留原本位置，会覆盖到其他节点</p>
+<p>top v.s. bottom</p>
+<p>​        top 优先</p>
+<p>left v.s. right</p>
+<p>​       left 优先</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="./css/Relative01.jpg" alt=""></p>
+<p><img src="./css/Relative02.jpg" alt=""></p>
+<ul>
+<li><p>absolute绝对位置</p>
+<p>不保留原本位置</p>
+<p>相对于最近已定位的祖先节点</p>
+<p><img src="./css/Absolute.jpg" alt=""></p>
+</li>
+<li><p>fixed固定位置</p>
+<p>不保留原本位置</p>
+<p>相对于网页框架</p>
+</li>
+</ul>
+<p><img src="./css/Fixed.jpg" alt=""></p>
+<ul>
+<li><p>z-index 图层索引</p>
+<ul>
+<li><p>值越大越上面</p>
+</li>
+<li><p>值相同时，依节点顺序排列 (越后面的节点越上面)</p>
+</li>
+<li><p>通常搭配</p>
+<p>position: absolute</p>
+<p>position: fixed</p>
+</li>
+</ul>
+</li>
+<li><p>sticky 黏贴</p>
+<ul>
+<li>relative和fixed的结合</li>
+<li>在目标屏幕可见时像 relative，滚到超出目标时像fixed</li>
+<li>当页面滚动至物件位置时，会固定并停留在顶部</li>
+<li>Google Chrome version 64 开始支援</li>
+</ul>
+</li>
+</ul>
+<h4 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h4><ul>
+<li><p>Float浮动:改变原本版面位置，根据浮动边界决定位置。</p>
+</li>
+<li><p>浮动后，元素型态会变成 inline-block</p>
+</li>
+<li><p>left 向上向左堆叠</p>
+</li>
+<li><p>right 向上向右堆叠</p>
+</li>
+<li><p>clear 清除浮动</p>
+<p>left 清除左边浮动</p>
+<p>right 清除右边浮动</p>
+<p>both 清除两者浮动</p>
+</li>
+</ul>
+<h4 id="Elements-align"><a href="#Elements-align" class="headerlink" title="Elements align"></a>Elements align</h4><ul>
+<li><p>margin 水平置中对齐</p>
+<p>——auto</p>
+</li>
+<li><p>vertical-align 垂直对齐 (元素)</p>
+<p>——top</p>
+<p>——middle</p>
+<p>——bottom</p>
+</li>
+</ul>
+<h4 id="Transform"><a href="#Transform" class="headerlink" title="Transform"></a>Transform</h4><p>transform：变形，用于改变 element 的形状。</p>
+<p>类型</p>
+<ul>
+<li>偏移 (translate)</li>
+<li>旋转 (rotate)</li>
+<li>缩放 (scale)</li>
+<li>扭转 (skew)</li>
+</ul>
+<h4 id="Transform-2D"><a href="#Transform-2D" class="headerlink" title="Transform 2D"></a>Transform 2D</h4><ul>
+<li><p>transform: translate(x, y) 偏移</p>
+<p>—x: X 轴偏移量，可为百分比</p>
+<p>—y: Y 轴偏移量，可为百分比</p>
+</li>
+<li><p>transform: rotate(ndeg) 旋转</p>
+<p>—预设以元素中心为旋转中心点</p>
+<p>—正数值为顺时钟旋转</p>
+<p>—负数值为逆时钟旋转</p>
+<p>—需加 deg 单位</p>
+</li>
+<li><p>transform-origin: x y 旋转中心点</p>
+<p>—x: X 轴偏移量，可为百分比、left、center、right</p>
+<p>—y: Y 轴偏移量，可为百分比、top、center、bottom</p>
+</li>
+<li><p>transform: scale(w-rate, h-rate) 缩放</p>
+<p>—w-rate: 宽度缩放倍率</p>
+<p>—h-rate: 高度缩放倍率</p>
+</li>
+<li><p>transform: skew(xdeg, ydeg) 扭转</p>
+<p>—x: 沿著 x 轴扭转</p>
+<p>—y: 沿著 y 轴扭转</p>
+<p>—需加 deg 单位</p>
+</li>
+<li><p>transform: skewX(xdeg) 沿著 x 轴扭转</p>
+</li>
+<li><p>transform: skewY(ydeg) 沿著 y 轴扭转</p>
+</li>
+</ul>
+<h4 id="Transform-3D"><a href="#Transform-3D" class="headerlink" title="Transform 3D"></a>Transform 3D</h4><ul>
+<li><p>perspective 视角 (远近)</p>
+</li>
+<li><p>perspective-origin 视角位置</p>
+</li>
+<li><p>transform: translate(x, y) 偏移</p>
+<ul>
+<li><p>transform: translateX(x) x 轴偏移</p>
+</li>
+<li><p>transform: translateY(y) y 轴偏移</p>
+</li>
+<li><p>transform: translateZ(z) z 轴偏移</p>
+<p>—x, y, z: 0 或 1（0 表不沿著该轴旋转, 1 表沿著该轴旋转）</p>
+<p>—a: 旋转角度</p>
+</li>
+</ul>
+</li>
+<li><p>transform: scale(w-rate, h-rate) 缩放</p>
+<ul>
+<li><p>transform: scaleX(rate) 沿著 x 轴缩放 (胖瘦)</p>
+</li>
+<li><p>transform: scaleY(rate) 沿著 y 轴缩放 (高矮)</p>
+</li>
+<li><p>transform: scaleZ(rate) 沿著 z 轴缩放</p>
+<p>—须搭配其他变形</p>
+</li>
+<li><p>transform: scale3d(x, y, z)</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="Transition"><a href="#Transition" class="headerlink" title="Transition"></a>Transition</h4><p>转场动画 (Transition)，由系统自动产生从样式 A 到样式 B 的渐变动画，单纯透过 CSS 製造转场动画。</p>
+<ul>
+<li><p>transition-property 属性名称</p>
+<p>—all (default)</p>
+</li>
+<li><p>transition-duration 效果持续时间 (单位 s, ms)</p>
+<p>—0s (default，不会有效果)</p>
+</li>
+<li><p>transition-timing-function 加速度曲线</p>
+</li>
+<li><p>transition-delay 延迟播放 (单位 s, ms)</p>
+</li>
+<li><p>transition-timing-function 加速度曲线</p>
+<p>—linear 均速</p>
+<p>—ease 先加速后减速 (default)</p>
+</li>
+</ul>
+<p>​       —ease -in 加速</p>
+<pre><code>—ease -out 减速
+</code></pre><p>​      —ease -in-out 平缓的先加速后减速</p>
+<h4 id="Animation"><a href="#Animation" class="headerlink" title="Animation"></a>Animation</h4><p>自订动画 (Animation)，由开发者自定义的动画，包含动画定义和动画使用。</p>
+<ul>
+<li><p>@keyframes 动画定义</p>
+<p>——from and to</p>
+<p>——进度百分比</p>
+</li>
+<li><p>animation 动画</p>
+</li>
+<li><p>animation-name 动画名称</p>
+</li>
+<li><p>animation-duration 动画持续时间 (单位 s, ms)</p>
+</li>
+<li><p>animation-timing-function 加速度曲线</p>
+<p>—linear 均速</p>
+<p>—ease 先加速后减速 (default)</p>
+<p>—ease -in 加速</p>
+<p>—ease -out 减速</p>
+<p>—ease -in-out 平缓的先加速后减速</p>
+</li>
+<li><p>animation-delay 延迟播放</p>
+</li>
+<li><p>animation-iteration-count 播放次数 (infinite: 无限循环)</p>
+</li>
+<li><p>animation-direction 播放方向</p>
+<p>—normal 0% ~ 100% (default)</p>
+<p>—reverse 100% ~ 0%</p>
+<p>—alternate 0% ~ 100%，100% ~ 0%</p>
+<p>—alternate-reverse 100% ~ 0%，0% ~ 100%</p>
+</li>
+<li><p>animation-fill-mode 播放前后的状态</p>
+<p>—none 回到未播放动画效果前 (default)</p>
+<p>—forwards 停在最后一个状态上</p>
+<p>—backwards 停在第一个状态上</p>
+<p>—both 视 animation-direction</p>
+<p>—animation-play-state 播放或暂停</p>
+<p>—running 播放 (default)</p>
+<p>—paused 暂停</p>
+</li>
+</ul>
+<h3 id="常用单位"><a href="#常用单位" class="headerlink" title="常用单位"></a>常用单位</h3><ul>
+<li><p>常用绝对单位</p>
+<ul>
+<li>px</li>
+<li>pt</li>
+</ul>
+</li>
+<li><p>常用相对单位</p>
+<ul>
+<li>% (以父节点为基准的百分比)</li>
+<li>em (预设 16px)</li>
+<li>rem (root em，预设 16px)</li>
+</ul>
+<p>注：em 和 rem</p>
+<ul>
+<li>em = 父节点大小 * em倍数</li>
+<li>rem = 根节点大小 * rem倍数</li>
+</ul>
+</li>
+</ul>
+<p>​      </p>
+<h3 id="Web-UI-设计哲学"><a href="#Web-UI-设计哲学" class="headerlink" title="Web UI 设计哲学"></a>Web UI 设计哲学</h3><p>介面容器，为了因应不同使用者的萤幕大小，确保版面不会因解析度不同而跑版，便于开发者开发，要素包括</p>
+<ul>
+<li>容器本身使用绝对单位的宽度 (px</li>
+<li>水平置中对齐</li>
+<li>容器内部的元素使用相对单位 (%, rem)</li>
+</ul>
+<p>最好的设计是没有卷轴，过多的卷轴会造成使用者操作上的困扰，第二好的设计是只有垂直卷轴，应避免横向卷轴。</p>
+<h3 id="RWD-基础"><a href="#RWD-基础" class="headerlink" title="RWD 基础"></a>RWD 基础</h3><h4 id="响应式网页设计"><a href="#响应式网页设计" class="headerlink" title="响应式网页设计"></a>响应式网页设计</h4><p>响应式网页设计 (Responsive Web Design)，网页的设计可以自动适应不同访问设备(电脑, 平板, 手机)，单纯透过 CSS Media Query 控制，不须维护第二套程式码，强调使用相对单位 (%, rem, em)和流动、弹性的设计 (inline-block, float…)。</p>
+<ul>
+<li><p>mata - viewport 可视区域</p>
+<p>user-scalable=no 取消移动装置的缩放功能</p>
+</li>
+</ul>
+<h4 id="Media-Queries-与介面容器"><a href="#Media-Queries-与介面容器" class="headerlink" title="Media Queries 与介面容器"></a>Media Queries 与介面容器</h4><p>为了让不同使用者的萤幕解析度可以获得最佳浏览效果，根据萤幕解析度，制定不同大小的介面容器，增加使用者体验。</p>
+<ul>
+<li>常见的介面容器宽度</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center"><strong>超小萤幕设备</strong></th>
+<th style="text-align:center"><strong>小萤幕设备</strong></th>
+<th style="text-align:center"><strong>中萤幕设备</strong></th>
+<th style="text-align:center"><strong>大萤幕设备</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Media Queries</td>
+<td style="text-align:center">&lt;768px</td>
+<td style="text-align:center">>=768px</td>
+<td style="text-align:center">>=992px</td>
+<td style="text-align:center">>=1200px</td>
+</tr>
+<tr>
+<td>容器宽度</td>
+<td style="text-align:center">100%</td>
+<td style="text-align:center">750px</td>
+<td style="text-align:center">970px</td>
+<td style="text-align:center">1170px</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>流动配置 (Fluid Layout)</p>
+<p>—根据父节点大小自动排版的样式</p>
+<p>—相对单位（em, rem，%）</p>
+<p>—常用的流动样式（display: inline-block，float）</p>
+</li>
+</ul>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><h4 id="Inherit"><a href="#Inherit" class="headerlink" title="Inherit"></a>Inherit</h4><ul>
+<li>父节点部分样式会被子节点继承、部分样式不会</li>
+<li>会被继承的样式<ul>
+<li>font-size</li>
+<li>text-align</li>
+</ul>
+</li>
+<li>不会被继承的样式<ul>
+<li>background</li>
+<li>position</li>
+</ul>
+</li>
+</ul>
+<h4 id="常用-Function"><a href="#常用-Function" class="headerlink" title="常用 Function"></a>常用 Function</h4><ul>
+<li><p>!important 避免样式被覆盖</p>
+</li>
+<li><p>:not() 非</p>
+<p>— :not(:first-child) 不是第一个子节点的</p>
+</li>
+<li><p>calc() 不同单位计算</p>
+<p>— left: calc(100% - 200px) 100%-200px</p>
+</li>
+</ul>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">hailong</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/2021/04/17/CSS/">http://example.com/2021/04/17/CSS/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">hailong</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">
+                                    <span class="chip bg-color">技术分享</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">微信转账300块，你懂我意思？</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/Alipay1.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2021/04/17/CSS/">
+                    <div class="card-image">
+                        
+                        <img src="/images/4.jpg" class="responsive-img" alt="CSS">
+                        
+                        <span class="card-title">CSS</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            hailong
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">
+                        <span class="chip bg-color">技术分享</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/04/17/JavaScript/">
+                    <div class="card-image">
+                        
+                        <img src="/images/4.jpg" class="responsive-img" alt="JavaScript">
+                        
+                        <span class="card-title">JavaScript</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            hailong
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">
+                        <span class="chip bg-color">技术分享</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 无名小栈<br />'
+            + '文章作者: hailong<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，转载请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="2198799044"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.8'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2021</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">hailong</a>
+            <!--|&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>-->
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                &nbsp<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2019";
+                    var startMonth = "6";
+                    var startDate = "28";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站勉强运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/DragonSuu" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1329384039@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+    <a href="https://twitter.com/dragon_xu6" class="tooltipped" target="_blank" data-tooltip="关注我的Twitter: https://twitter.com/dragon_xu6" data-position="top" data-delay="50">
+        <i class="fab fa-twitter"></i>
+    </a>
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1329384039" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1329384039" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="https://weibo.com/u/5615210339" class="tooltipped" target="_blank" data-tooltip="关注我的微博: https://weibo.com/u/5615210339" data-position="top" data-delay="50">
+        <i class="fab fa-weibo"></i>
+    </a>
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

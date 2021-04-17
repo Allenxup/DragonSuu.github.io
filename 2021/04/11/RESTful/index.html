@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="RESTful, 年少有爲">
-    <meta name="description" content="九江职业技术学院 | 软件设计 | SZ打工人 | 分享生活 | 分享知识">
+    <meta name="keywords" content="RESTful, 无名小栈">
+    <meta name="description" content="九江职业技术学院 | 软件设计 | SZ打工人 | 记录生活 | 分享技术">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>RESTful | 年少有爲</title>
+    <title>RESTful | 无名小栈</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -43,7 +43,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">年少有爲</span>
+                    <span class="logo-span">无名小栈</span>
                 </a>
             </div>
             
@@ -142,10 +142,10 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">年少有爲</div>
+        <div class="logo-name">无名小栈</div>
         <div class="logo-desc">
             
-            九江职业技术学院 | 软件设计 | SZ打工人 | 分享生活 | 分享知识
+            九江职业技术学院 | 软件设计 | SZ打工人 | 记录生活 | 分享技术
             
         </div>
     </div>
@@ -391,7 +391,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-04-11
+                    2021-04-17
                 </div>
                 
 
@@ -418,19 +418,19 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="RESTful"><a href="#RESTful" class="headerlink" title="RESTful"></a>RESTful</h2><p>RESTful 是一種系統開發設計風格、原則。可視情況調整，以下參考來源 RFC5789 (<a target="_blank" rel="noopener" href="https://tools.ietf.org/html/rfc5789)。">https://tools.ietf.org/html/rfc5789)。</a></p>
+                <p>RESTful 是一种系统开发设计风格、原则。可视情况调整，以下参考来源 RFC5789 (<a target="_blank" rel="noopener" href="https://tools.ietf.org/html/rfc5789">https://tools.ietf.org/html/rfc5789</a>)</p>
 <hr>
-<h4 id="Noun"><a href="#Noun" class="headerlink" title="Noun"></a>Noun</h4><ul>
-<li>一般資源</li>
+<h3 id="Noun"><a href="#Noun" class="headerlink" title="Noun"></a>Noun</h3><ul>
+<li>一般资源</li>
 </ul>
-<p>​          通用於一律使用複數名詞</p>
-<p>​                  例如：/books 或 /books/123。但有部分人認為應該使用單數名詞，因為： /book/123 看似比 /books/123 合理。但想想檔案                     系統的目錄命名 (例如/Users或/Documents)，其實用複數也沒問題。複數可以保持API endpoint的一致性，所以一般資源建議用複數。</p>
+<p>​          通用于一律使用複数名词</p>
+<p>​                  例如：/books 或 /books/123。但有部分人认为应该使用单数名词，因为： /book/123 看似比 /books/123 合理。但想想档案系统的目录命名 (例如/Users或/Documents)，其实用複数也没问题。複数可以保持API endpoint的一致性，所以一般资源建议用複数。</p>
 <ul>
-<li>唯一資源：對 client 而言只有一份的資源</li>
+<li>唯一资源：对 client 而言只有一份的资源</li>
 </ul>
-<p>​              通用於單數名詞</p>
-<p>​                      例如：user 是指目前驗證的使用者，使用者永遠只能同時登入一個使用者</p>
-<h4 id="Http-Method"><a href="#Http-Method" class="headerlink" title="Http Method"></a>Http Method</h4>
+<p>​              通用于单数名词</p>
+<p>​                      例如：user 是指目前验证的使用者，使用者永远只能同时登入一个使用者</p>
+<h3 id="Http-Method"><a href="#Http-Method" class="headerlink" title="Http Method"></a>Http Method</h3>
 <table>
     <tr align="center">
         <th>Method</th>
@@ -438,7 +438,7 @@
         <th>Safe</th>
         <th>CRUD</th>
         <th>OO</th>
-        <th>生活動詞</th>
+        <th>生活动词</th>
         <th>用途</th>
     </tr>
     <tr>
@@ -448,11 +448,11 @@
         <td rowspan='2'>Read</td>
         <td rowspan='2'>get</td>
         <td>get</td>
-        <td>取得資料</td>
+        <td>取得资料</td>
     </tr>
     <tr>
        <td>list</td>
-       <td>列出資料</td>
+       <td>列出资料</td>
     </tr>
     <tr>
         <td rowspan='2'>POST</td>
@@ -461,11 +461,11 @@
         <td rowspan='2'>Create</td>
         <td rowspan='2'>add</td>
         <td>create</td>
-        <td>建立一個可以完全獨立存在的實體</td>
+        <td>建立一个可以完全独立存在的实体</td>
     </tr>
     <tr>
         <td>add</td>
-        <td>增加一個必須依賴於某個實體的實體</td>
+        <td>增加一个必须依赖于某个实体的实体</td>
     </tr>
     <tr>
         <td rowspan='2'>PUT</td>
@@ -474,18 +474,18 @@
         <td rowspan='3'>Update</td>
         <td rowspan='3'>set</td>
         <td>replace</td>
-        <td>取代一個關係，已存在時先刪除後建立，不存在時直接建立</td>
+        <td>取代一个关係，已存在时先删除后建立，不存在时直接建立</td>
     </tr>
     <tr>
         <td>add</td>
-        <td>附加唯一關係，兩個關係實體可以互相獨立存在，且已經存在</td>
+        <td>附加唯一关係，两个关係实体可以互相独立存在，且已经存在</td>
     </tr>
     <tr>
         <td>PATCH</td>
         <td></td>
         <td></td>
         <td>edit</td>
-        <td>編輯某個實體</td>
+        <td>编辑某个实体</td>
     </tr>
     <tr>
         <td>DELETE</td>
@@ -494,37 +494,37 @@
         <td>Delete</td>
         <td>remove</td>
         <td>remove delete</td>
-        <td>刪除某個實體</td>
+        <td>删除某个实体</td>
     </tr>
     </table>
 
 <ul>
-<li>Safe：該操作不會改變伺服器端的資源狀態 (而且結果可以被cache)，屬於 Safe 的操作必定屬於 Idempotent</li>
-<li>Idempotent (冪等性)：該操作不管做1遍或做n遍，都會得到同樣的資源狀態結果 (但不一定得到同樣的回傳值，例如第2次DELETE請求可能回傳404)，因此client端可以放心retry</li>
+<li>Safe：该操作不会改变伺服器端的资源状态 (而且结果可以被cache)，属于 Safe 的操作必定属于 Idempotent</li>
+<li>Idempotent (幂等性)：该操作不管做1遍或做n遍，都会得到同样的资源状态结果 (但不一定得到同样的回传值，例如第2次DELETE请求可能回传404)，因此client端可以放心retry</li>
 </ul>
-<h4 id="GET"><a href="#GET" class="headerlink" title="GET"></a>GET</h4><ul>
-<li>SAFE：每次執行操作時，GET 只有讀取 Resource，不會改變到任何的 Resource (資源, 資料)</li>
-<li>Idempotent：每次執行操作時，GET 只有讀取 Resource，不會改變到任何的 Resource (資源, 資料)，所以任何資源的任何狀態都是一樣的</li>
+<h3 id="GET"><a href="#GET" class="headerlink" title="GET"></a>GET</h3><ul>
+<li>SAFE：每次执行操作时，GET 只有读取 Resource，不会改变到任何的 Resource (资源, 资料)</li>
+<li>Idempotent：每次执行操作时，GET 只有读取 Resource，不会改变到任何的 Resource (资源, 资料)，所以任何资源的任何状态都是一样的</li>
 </ul>
-<h4 id="POST"><a href="#POST" class="headerlink" title="POST"></a>POST</h4><ul>
-<li><p>每次執行操作時，POST 都會建立一個 Resource (資源, 資料)</p>
+<h3 id="POST"><a href="#POST" class="headerlink" title="POST"></a>POST</h3><ul>
+<li><p>每次执行操作时，POST 都会建立一个 Resource (资源, 资料)</p>
 <ul>
-<li>範例：建立使用者<ul>
-<li>執行第一次時：建立一個 name = “帥小慶” 的 user，但其 id = 1</li>
-<li>執行第二次時：建立一個 name = “帥小慶” 的 user，但其 id = 2，發送同樣的請求，可每次都是不同的 Resource</li>
+<li>范例：建立使用者<ul>
+<li>执行第一次时：建立一个 name = “帅小庆” 的 user，但其 id = 1</li>
+<li>执行第二次时：建立一个 name = “帅小庆” 的 user，但其 id = 2，发送同样的请求，可每次都是不同的 Resource</li>
 </ul>
 </li>
 </ul>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token constant">POST</span> <span class="token operator">/</span>users
 Data<span class="token operator">:</span>
   <span class="token punctuation">&#123;</span>
-    <span class="token string">"name"</span><span class="token operator">:</span> <span class="token string">"帥小慶"</span>
+    <span class="token string">"name"</span><span class="token operator">:</span> <span class="token string">"帅小庆"</span>
   <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
-<li><p>Create：建立一個可以完全獨立存在的實體</p>
+<li><p>Create：建立一个可以完全独立存在的实体</p>
 <ul>
-<li><p>範例：建立使用者</p>
-<p>​        建立使用者前不需要建立任何的東西，就可以建立使用者了，使用者是可以完全獨立的存在</p>
+<li><p>范例：建立使用者</p>
+<p>​        建立使用者前不需要建立任何的东西，就可以建立使用者了，使用者是可以完全独立的存在</p>
 </li>
 </ul>
 </li>
@@ -532,36 +532,34 @@ Data<span class="token operator">:</span>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token constant">POST</span> <span class="token operator">/</span>users
 Data<span class="token operator">:</span>
   <span class="token punctuation">&#123;</span>
-    <span class="token string">"name"</span><span class="token operator">:</span> <span class="token string">"帥小慶"</span>
+    <span class="token string">"name"</span><span class="token operator">:</span> <span class="token string">"帅小庆"</span>
   <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
-<li><p>Add：增加一個<strong>必須</strong>依賴於某個實體的實體</p>
-<p>​       資料結構：1對多的關係</p>
+<li><p>Add：增加一个<strong>必须</strong>依赖于某个实体的实体</p>
+<p>​       资料结构：1对多的关係</p>
 </li>
-<li><p>範例：Add a public key on behalf of a user 增加一個代表使用者的公鑰 (Gitea API)</p>
-<p>​        增加這個公鑰之前，使用者必須存在，公鑰必須歸屬於某個使用者之下</p>
-<p>​        公鑰跟姓名一樣，使用相同電腦的公鑰就會相同，但不表示是同一個使用者，故公鑰也會有自己的 ID</p>
-<p>​        我每次增加公鑰時，都將生成不同的公鑰 ID</p>
+<li><p>范例：Add a public key on behalf of a user 增加一个代表使用者的公钥 (Gitea API)</p>
+<p>​        增加这个公钥之前，使用者必须存在，公钥必须归属于某个使用者之下</p>
+<p>​        公钥跟姓名一样，使用相同电脑的公钥就会相同，但不表示是同一个使用者，故公钥也会有自己的 ID</p>
+<p>​        我每次增加公钥时，都将生成不同的公钥 ID</p>
 <pre class="line-numbers language-none"><code class="language-none">POST&#x2F;admin&#x2F;users&#x2F;&#123;username&#125;&#x2F;keys<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
 </ul>
-<h4 id="PUT"><a href="#PUT" class="headerlink" title="PUT"></a>PUT</h4><ul>
-<li><p>Idempotent：每次執行操作時，PUT 都會取代 Resource，不管操作幾次，使用者獲取得 Resource 結果都是一樣的</p>
+<h3 id="PUT"><a href="#PUT" class="headerlink" title="PUT"></a>PUT</h3><ul>
+<li><p>Idempotent：每次执行操作时，PUT 都会取代 Resource，不管操作几次，使用者获取得 Resource 结果都是一样的</p>
 </li>
-<li><p>Replace：不論資源如何，最終的資源狀態都是一樣的</p>
-<p>​     Resource 已存在時，或許不理會、或許先刪除後建立 (取代)</p>
-<p>​     Resource 不存在時，直接建立</p>
+<li><p>Replace：不论资源如何，最终的资源状态都是一样的</p>
+<p>​     Resource 已存在时，或许不理会、或许先删除后建立 (取代)</p>
+<p>​     Resource 不存在时，直接建立</p>
 </li>
-<li><p>Add：添加唯一關係，建立這個唯一關係前，兩個關連實體都必須存在。在沒有建立關係前，兩個關連實體都可以互相獨立存在</p>
+<li><p>Add：添加唯一关係，建立这个唯一关係前，两个关连实体都必须存在。在没有建立关係前，两个关连实体都可以互相独立存在</p>
 </li>
-<li><p>資料結構應為：多對多，且兩個關連實體的 PK，同時也是關係實體的 PK、FK</p>
+<li><p>资料结构应为：多对多，且两个关连实体的 PK，同时也是关係实体的 PK、FK</p>
 </li>
-</ul>
-<ul>
-<li><p>範例：增加使用者與角色的關係</p>
-<p>​        增加使用者跟角色的關係前，使用者跟角色都必須存在；增加使用者跟角色的關係前，使用者跟角色可以獨立存在</p>
-<p>​        使用者 23240，跟角色 2，的關係最多只能有一條關係 (使用者 23240 有角色 2 )，最少沒有關係 (使用者 23240 沒有角色 2 )</p>
-<p>​        執行第二次操作時，使用者 23240 跟角色 2 的從屬關係仍然存在，也不會跑出第二條使用者 23240 跟角色 2 的從屬關係</p>
+<li><p>范例：增加使用者与角色的关係</p>
+<p>​        增加使用者跟角色的关係前，使用者跟角色都必须存在；增加使用者跟角色的关係前，使用者跟角色可以独立存在</p>
+<p>​        使用者 23240，跟角色 2，的关係最多只能有一条关係 (使用者 23240 有角色 2 )，最少没有关係 (使用者 23240 没有角色 2 )</p>
+<p>​        执行第二次操作时，使用者 23240 跟角色 2 的从属关係仍然存在，也不会跑出第二条使用者 23240 跟角色 2 的从属关係</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token constant">PUT</span> user<span class="token operator">/</span><span class="token punctuation">&#123;</span>account<span class="token punctuation">&#125;</span><span class="token operator">/</span>roles
 Data
   <span class="token punctuation">&#123;</span>
@@ -570,63 +568,65 @@ Data
 </li>
 </ul>
 <ul>
-<li><p>範例：Follow a user 關注一個使用者 (Gitea)</p>
-<p>​       增加關注關係時，關注者與被關注者 (都是使用者) 都必須存在；增加關注關係時，關注者與被關注者 (都是使用者) 都必須存在</p>
-<p>​      關注者使用者 23240，跟被關注者使用者 F3860056，的關係最多只能有一條關係 (23240 關注 F3860056)，最少沒有關係        (23240 不關注 F3860056)</p>
-<p>​      執行第二次操作時，關注者 23240 跟被關注者 F3860056 的關注關係仍然存在，也不會跑出第二條關注者 23240 跟被關注者 F3860056 的關注關係</p>
+<li><p>范例：Follow a user 关注一个使用者 (Gitea)</p>
+<p>​       增加关注关係时，关注者与被关注者 (都是使用者) 都必须存在；增加关注关係时，关注者与被关注者 (都是使用者) 都必须存在</p>
+<p>​      关注者使用者 23240，跟被关注者使用者 F3860056，的关係最多只能有一条关係 (23240 关注 F3860056)，最少没有关係        (23240 不关注 F3860056)</p>
+<p>​      执行第二次操作时，关注者 23240 跟被关注者 F3860056 的关注关係仍然存在，也不会跑出第二条关注者 23240 跟被关注者 F3860056 的关注关係</p>
 <pre class="line-numbers language-none"><code class="language-none">PUT&#x2F;user&#x2F;following&#x2F;&#123;username&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h4 id="PATCH"><a href="#PATCH" class="headerlink" title="PATCH"></a>PATCH</h4></li>
-<li><p>Edit：編輯可獨立存在、且已經存在的實體，也就是產生新版本的實體，可能會影響其他 Resource</p>
 </li>
-<li><p>範例：編輯使用者</p>
-<p>​      編輯使用者，使用者已經存在，且我們可能有紀錄編輯時間、編輯人、編輯IP，所以每次的編輯都會造成不一樣的結果</p>
-<p>​             第一次編輯使用者，更新時間變為 08:00，編輯人 23240，IP 10.151.110.165</p>
-<p>​             第二次編輯使用者，更新時間變為 09:00，編輯人 23241，IP 10.151.110.144</p>
+</ul>
+<h3 id="PATCH"><a href="#PATCH" class="headerlink" title="PATCH"></a>PATCH</h3><ul>
+<li><p>Edit：编辑可独立存在、且已经存在的实体，也就是产生新版本的实体，可能会影响其他 Resource</p>
+</li>
+<li><p>范例：编辑使用者</p>
+<p>​      编辑使用者，使用者已经存在，且我们可能有纪录编辑时间、编辑人、编辑IP，所以每次的编辑都会造成不一样的结果</p>
+<p>​             第一次编辑使用者，更新时间变为 08:00，编辑人 23240，IP 10.151.110.165</p>
+<p>​             第二次编辑使用者，更新时间变为 09:00，编辑人 23241，IP 10.151.110.144</p>
 <pre class="line-numbers language-none"><code class="language-none">PATCH &#x2F;users&#x2F;&#123;account&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
 </ul>
-<h4 id="DELETE"><a href="#DELETE" class="headerlink" title="DELETE"></a>DELETE</h4><ul>
-<li><p>Idempotent：每次執行操作時，DELETE 都會刪除相同的東西</p>
+<h3 id="DELETE"><a href="#DELETE" class="headerlink" title="DELETE"></a>DELETE</h3><ul>
+<li><p>Idempotent：每次执行操作时，DELETE 都会删除相同的东西</p>
 </li>
-<li><p>範例：刪除使用者</p>
-<p>​         第一次刪除使用者23240，刪除使用者23240</p>
-<p>​        第二次刪除使用者23240，還是刪除使用者23240，只不過使用者 23240 不存在了</p>
+<li><p>范例：删除使用者</p>
+<p>​         第一次删除使用者23240，删除使用者23240</p>
+<p>​        第二次删除使用者23240，还是删除使用者23240，只不过使用者 23240 不存在了</p>
 <pre class="line-numbers language-none"><code class="language-none">DELETE &#x2F;users&#x2F;&#123;account&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
 </ul>
-<h4 id="HTTP-Status-Code"><a href="#HTTP-Status-Code" class="headerlink" title="HTTP Status Code"></a>HTTP Status Code</h4><p>HTTP状态码（HTTP Status Code）是用以表示网页服务器HTTP响应状态的3位数字代码。所有状态码的第一个数字代表了响应的五种状态之一。 除非另有说明，状态码是HTTP / 1.1标准（RFC 7231）的一部分。</p>
+<h3 id="HTTP-Status-Code"><a href="#HTTP-Status-Code" class="headerlink" title="HTTP Status Code"></a>HTTP Status Code</h3><p>HTTP状态码（HTTP Status Code）是用以表示网页服务器HTTP响应状态的3位数字代码。所有状态码的第一个数字代表了响应的五种状态之一。 除非另有说明，状态码是HTTP / 1.1标准（RFC 7231）的一部分。</p>
 <p>而关于 RESTful API 的请求状态，通常有以下两种设计方案：</p>
 <ul>
 <li>方案一：使用 HTTP 状态码来表示请求状态，200 时返回的内容就是数据；</li>
-<li>方案二：所有接口都返回 200 ，在响应内容里约定 错误码 或 錯誤信息</li>
+<li>方案二：所有接口都返回 200 ，在响应内容里约定 错误码 或 错误信息</li>
 </ul>
-<p>在實際應用中，應據具體情景及需要進行選擇與調整。<br>
+<p>在实际应用中，应据具体情景及需要进行选择与调整。<br>
 <table>
     <tr align='center'>
        <th>方案</th>
-        <th colspan='2'>優劣比較</th>
+        <th colspan='2'>优劣比较</th>
     </tr>
     <tr>
         <td rowspan='2'>方案一</td>
-        <td>優點</td>
-        <td>對服務端來說較為簡單方便</td>
+        <td>优点</td>
+        <td>对服务端来说较为简单方便</td>
     </tr>
     <tr>
-        <td>缺點</td>
-        <td>客戶端難以根據狀態碼處理複雜問題</td>
+        <td>缺点</td>
+        <td>客户端难以根据状态码处理複杂问题</td>
     </tr>
     <tr>
         <td rowspan='2'>方案二</td>
-        <td>優點</td>
-        <td>方便對返回資料進行統一處理和細細微性的控制</td>
+        <td>优点</td>
+        <td>方便对返回资料进行统一处理和细细微性的控制</td>
     </tr>
     <tr>
-        <td>缺點</td>
-        <td>相當於放棄了HTTP狀態碼的語義</td>
+        <td>缺点</td>
+        <td>相当于放弃了HTTP状态码的语义</td>
     </tr>
 </table>
 </p>
-<h4 id="常用HTTP狀態碼"><a href="#常用HTTP狀態碼" class="headerlink" title="常用HTTP狀態碼"></a>常用HTTP狀態碼</h4><table>
+<h3 id="常用HTTP状态码"><a href="#常用HTTP状态码" class="headerlink" title="常用HTTP状态码"></a>常用HTTP状态码</h3><table>
 <thead>
 <tr>
 <th style="text-align:left"><strong>Code</strong></th>
@@ -638,147 +638,147 @@ Data
 <tr>
 <td style="text-align:left"><strong>1XX</strong></td>
 <td style="text-align:left"><strong>Informational response</strong></td>
-<td style="text-align:left"><strong>此類狀態碼通常代表的響應都是信息性的，告訴客戶端可以進行下一步操作。</strong></td>
+<td style="text-align:left"><strong>此类状态码通常代表的响应都是信息性的，告诉客户端可以进行下一步操作。</strong></td>
 </tr>
 <tr>
 <td style="text-align:left">100</td>
 <td style="text-align:left">Continue</td>
-<td style="text-align:left">表示服務端已接收到請求頭，客戶端可以繼續發送請求體(如POST請求)。</td>
+<td style="text-align:left">表示服务端已接收到请求头，客户端可以继续发送请求体(如POST请求)。</td>
 </tr>
 <tr>
 <td style="text-align:left">101</td>
 <td style="text-align:left">Switching Protocols</td>
-<td style="text-align:left">表示服務端支持更優協議，讓客戶端在服務端更換協議後重新訪問。</td>
+<td style="text-align:left">表示服务端支持更优协议，让客户端在服务端更换协议后重新访问。</td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>2XX</strong></td>
 <td style="text-align:left"><strong>Successful</strong></td>
-<td style="text-align:left"><strong>此類狀態碼通常代表請求已成功被服務端接收、理解并接受。</strong></td>
+<td style="text-align:left"><strong>此类状态码通常代表请求已成功被服务端接收、理解并接受。</strong></td>
 </tr>
 <tr>
 <td style="text-align:left">200</td>
 <td style="text-align:left">OK</td>
-<td style="text-align:left">表示請求成功。</td>
+<td style="text-align:left">表示请求成功。</td>
 </tr>
 <tr>
 <td style="text-align:left">201</td>
 <td style="text-align:left">Created</td>
-<td style="text-align:left">表示請求已被實現，通常是在成功創建了某個資源。</td>
+<td style="text-align:left">表示请求已被实现，通常是在成功创建了某个资源。</td>
 </tr>
 <tr>
 <td style="text-align:left">202</td>
 <td style="text-align:left">Accepted</td>
-<td style="text-align:left">表示請求已被服務端接收，但尚未進行處理。</td>
+<td style="text-align:left">表示请求已被服务端接收，但尚未进行处理。</td>
 </tr>
 <tr>
 <td style="text-align:left">204</td>
 <td style="text-align:left">No Content</td>
-<td style="text-align:left">表示請求成功，但不會返回任何內容。</td>
+<td style="text-align:left">表示请求成功，但不会返回任何内容。</td>
 </tr>
 <tr>
 <td style="text-align:left">205</td>
 <td style="text-align:left">Reset Content</td>
-<td style="text-align:left">表示請求成功，但不會返回任何內容，並且要求客戶端重置表單。</td>
+<td style="text-align:left">表示请求成功，但不会返回任何内容，并且要求客户端重置表单。</td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>3XX</strong></td>
 <td style="text-align:left"><strong>Redirect</strong></td>
-<td style="text-align:left"><strong>此類狀態碼通常代表本次請求需要客戶端採取進一步操作才能完成。通常用於 重定向。 </strong></td>
+<td style="text-align:left"><strong>此类状态码通常代表本次请求需要客户端採取进一步操作才能完成。通常用于 重定向。 </strong></td>
 </tr>
 <tr>
 <td style="text-align:left">300</td>
 <td style="text-align:left">Multiple Choices</td>
-<td style="text-align:left">表示請求的資源有多個供可選擇，客戶端可自行選擇一個進行請求的重定向。</td>
+<td style="text-align:left">表示请求的资源有多个供可选择，客户端可自行选择一个进行请求的重定向。</td>
 </tr>
 <tr>
 <td style="text-align:left">301</td>
 <td style="text-align:left">Moved Permanently</td>
-<td style="text-align:left">表示請求的資源已經永久地移動到了新位置，並且將在Location域中攜帶該資源新的URI。</td>
+<td style="text-align:left">表示请求的资源已经永久地移动到了新位置，并且将在Location域中携带该资源新的URI。</td>
 </tr>
 <tr>
 <td style="text-align:left">304</td>
 <td style="text-align:left">Not Modified</td>
-<td style="text-align:left">表示請求的資源無發生修改，將不會返回任何資源。</td>
+<td style="text-align:left">表示请求的资源无发生修改，将不会返回任何资源。</td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>4XX</strong></td>
 <td style="text-align:left"><strong>Client Error</strong></td>
-<td style="text-align:left"><strong>此類狀態碼通常代表客戶端可能出現了錯誤。</strong></td>
+<td style="text-align:left"><strong>此类状态码通常代表客户端可能出现了错误。</strong></td>
 </tr>
 <tr>
 <td style="text-align:left">400</td>
 <td style="text-align:left">Bad Request</td>
-<td style="text-align:left">表示客戶端發出的請求有誤(格式、大小、無效的…)，服務端不能/不會處理該請求。</td>
+<td style="text-align:left">表示客户端发出的请求有误(格式、大小、无效的…)，服务端不能/不会处理该请求。</td>
 </tr>
 <tr>
 <td style="text-align:left">401</td>
 <td style="text-align:left">Unauthorized</td>
-<td style="text-align:left">表示客戶端未能提供必要的驗證，服務端拒絕提供資源。</td>
+<td style="text-align:left">表示客户端未能提供必要的验证，服务端拒绝提供资源。</td>
 </tr>
 <tr>
 <td style="text-align:left">403</td>
 <td style="text-align:left">Forbidden</td>
-<td style="text-align:left">表示服務端理解了該請求，但客戶端沒有足夠權限以訪問，遂拒絕提供該資源。</td>
+<td style="text-align:left">表示服务端理解了该请求，但客户端没有足够权限以访问，遂拒绝提供该资源。</td>
 </tr>
 <tr>
 <td style="text-align:left">404</td>
 <td style="text-align:left">Not Found</td>
-<td style="text-align:left">表示服務端無法找到請求的資源，其可能已經暫時(永久)失效。</td>
+<td style="text-align:left">表示服务端无法找到请求的资源，其可能已经暂时(永久)失效。</td>
 </tr>
 <tr>
 <td style="text-align:left">408</td>
 <td style="text-align:left">Request Timeout</td>
-<td style="text-align:left">表示請求超時。</td>
+<td style="text-align:left">表示请求超时。</td>
 </tr>
 <tr>
 <td style="text-align:left">409</td>
 <td style="text-align:left">Conflict</td>
-<td style="text-align:left">表示請求的資源發送了衝突，通常是PUT請求。</td>
+<td style="text-align:left">表示请求的资源发送了衝突，通常是PUT请求。</td>
 </tr>
 <tr>
 <td style="text-align:left">410</td>
 <td style="text-align:left">Gone</td>
-<td style="text-align:left">表示請求的資源已經永久失效，客戶端不應再次請求。</td>
+<td style="text-align:left">表示请求的资源已经永久失效，客户端不应再次请求。</td>
 </tr>
 <tr>
 <td style="text-align:left">411</td>
 <td style="text-align:left">Length Required</td>
-<td style="text-align:left">表示服務端拒絕在沒有定義Content-Length頭的情況下接收該請求。</td>
+<td style="text-align:left">表示服务端拒绝在没有定义Content-Length头的情况下接收该请求。</td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>5XX</strong></td>
 <td style="text-align:left"><strong>Server Error</strong></td>
-<td style="text-align:left"><strong>此類狀態碼通常代表由於服務端的原因，導致無法完成請求。</strong></td>
+<td style="text-align:left"><strong>此类状态码通常代表由于服务端的原因，导致无法完成请求。</strong></td>
 </tr>
 <tr>
 <td style="text-align:left">500</td>
 <td style="text-align:left">Internal Server Error</td>
-<td style="text-align:left">表示由於服務端遇到意料之外的變故，導致無法完成請求。</td>
+<td style="text-align:left">表示由于服务端遇到意料之外的变故，导致无法完成请求。</td>
 </tr>
 <tr>
 <td style="text-align:left">501</td>
 <td style="text-align:left">Not Implemented</td>
-<td style="text-align:left">表示服務端不支持完成請求所需的功能，導致無法完成請求。</td>
+<td style="text-align:left">表示服务端不支持完成请求所需的功能，导致无法完成请求。</td>
 </tr>
 <tr>
 <td style="text-align:left">502</td>
 <td style="text-align:left">Bad Gateway</td>
-<td style="text-align:left">表示作為網関或代理的服務段在執行請求時，從上游服務器獲得了無效的響應。</td>
+<td style="text-align:left">表示作为网関或代理的服务段在执行请求时，从上游服务器获得了无效的响应。</td>
 </tr>
 <tr>
 <td style="text-align:left">503</td>
 <td style="text-align:left">Service Unavailable</td>
-<td style="text-align:left">表示由於某些原因(服務器超載或系統維護等)，導致暫時無法完成請求。</td>
+<td style="text-align:left">表示由于某些原因(服务器超载或系统维护等)，导致暂时无法完成请求。</td>
 </tr>
 <tr>
 <td style="text-align:left">504</td>
 <td style="text-align:left">Gatewy Timeout</td>
-<td style="text-align:left">表示作為網関或代理的服務段在執行請求時，未能及時從上游服務器獲得響應。</td>
+<td style="text-align:left">表示作为网関或代理的服务段在执行请求时，未能及时从上游服务器获得响应。</td>
 </tr>
 <tr>
 <td style="text-align:left">505</td>
 <td style="text-align:left">HTTP Version Not  Supported</td>
-<td style="text-align:left">表示服務端不支持請求的HTTP協議版本，導致無法完成請求。</td>
+<td style="text-align:left">表示服务端不支持请求的HTTP协议版本，导致无法完成请求。</td>
 </tr>
 </tbody>
 </table>
@@ -1019,17 +1019,16 @@ Data
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/04/11/RESTful/">
+                <a href="/2021/04/17/JavaScript/">
                     <div class="card-image">
                         
-                        <img src="/images/4.jpg" class="responsive-img" alt="RESTful">
+                        <img src="/images/4.jpg" class="responsive-img" alt="JavaScript">
                         
-                        <span class="card-title">RESTful</span>
+                        <span class="card-title">JavaScript</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1039,9 +1038,9 @@ Data
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-11
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-17
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1050,7 +1049,6 @@ Data
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -1140,7 +1138,7 @@ Data
 
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
-            + '来源: 年少有爲<br />'
+            + '来源: 无名小栈<br />'
             + '文章作者: hailong<br />'
             + '文章链接: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，转载请注明出处。';

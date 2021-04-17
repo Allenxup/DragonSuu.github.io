@@ -2,30 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2021/04/08/hello-world/</loc>
+    <loc>http://example.com/2021/04/17/JavaScript/</loc>
     
-    <lastmod>2021-04-11T09:43:04.442Z</lastmod>
+    <lastmod>2021-04-17T12:08:08.492Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://example.com/2021/04/11/MVC/</loc>
     
-    <lastmod>2021-04-11T09:43:04.111Z</lastmod>
+    <lastmod>2021-04-17T12:08:08.369Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/2021/04/11/SoureTree/</loc>
+    <loc>http://example.com/2021/04/17/CSS/</loc>
     
-    <lastmod>2021-04-11T09:43:04.097Z</lastmod>
+    <lastmod>2021-04-17T12:05:57.606Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://example.com/2021/04/11/RESTful/</loc>
     
-    <lastmod>2021-04-11T09:43:04.081Z</lastmod>
+    <lastmod>2021-04-17T11:53:17.931Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/04/11/SoureTree/</loc>
+    
+    <lastmod>2021-04-17T11:21:01.655Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/04/08/hello-world/</loc>
+    
+    <lastmod>2021-04-11T09:43:04.442Z</lastmod>
     
   </url>
   
