@@ -289,6 +289,13 @@
 
 <div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
     
+        <div id="prev-cover" class="left waves-effect carousel-control">
+            <i class="icon fa fa-angle-left"></i>
+        </div>
+        <div id="next-cover" class="right waves-effect carousel-control">
+            <i class="icon fa fa-angle-right"></i>
+        </div>
+    
 
     <div class="carousel-item red white-text bg-cover about-cover">
         <div class="container">
@@ -386,6 +393,122 @@
         </div>
     </div>
 
+    
+        
+
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('/medias/banner/2.jpg');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">MVC</div>
+                            <div class="description center-align">
+                                
+                                    MVC是一个设计模式，它强制性的使应用程序的输入、处理和输出分开。使用MVC应用程序被分成三个核心部件：模型、视图、控制器。它们各自处理自己的任务。
+
+概念
+MVC（Model–View–Controller）是软件工程中的一种软件架构模式
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/2021/04/11/MVC/" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('/medias/banner/8.png');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">无名小栈</div>
+                            <div class="description center-align">
+                                
+                                    欢迎来到我的 Blog！部分功能页面正在开发完善中……
+其实早在之前就有建Blog的想法，因为生活的苟且（搬砖人），所以暂时放下了远方啊。主要目的就是记录生活，一些所思所想，分享技术知识。建立一个属于自己的树洞。
+
+
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/2021/04/08/hello-world/" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('/images/9.jpg');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">CSS</div>
+                            <div class="description center-align">
+                                
+                                    CSS（Cascading Style Sheets）：层迭样式表，定义如何显示HTML元素，样式通常存储在样式表中，解决内容与表现分离的问题，多个样式定义可层迭为一个。主要目的在于增加开发速度、易维护、易变更样式。
+
+语法
+使用方式
+
+引
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/2021/04/17/CSS/" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('/medias/banner/7.jpg');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">JavaScript</div>
+                            <div class="description center-align">
+                                
+                                    
+JavaScript
+
+
+高阶程式语言
+直译式程式语言 (脚本式程式语言)
+动态型别程式语言 (Dynamic typed language)
+在 Browser 中执行的程式语言
+用来控制 HTML 中的 Elements
+大小写视为不
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/2021/04/17/JavaScript/" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
     
 </div>
 
@@ -505,7 +628,7 @@
                     <a href="/2021/04/17/CSS/">
                         <div class="card-image">
                             
-                            <img src="/images/4.jpg" class="responsive-img" alt="CSS">
+                            <img src="/images/9.jpg" class="responsive-img" alt="CSS">
                             
                             <span class="card-title">CSS</span>
                         </div>
@@ -552,7 +675,7 @@
                     <a href="/2021/04/17/JavaScript/">
                         <div class="card-image">
                             
-                            <img src="/images/4.jpg" class="responsive-img" alt="JavaScript">
+                            <img src="/images/10.jpg" class="responsive-img" alt="JavaScript">
                             
                             <span class="card-title">JavaScript</span>
                         </div>
@@ -1114,13 +1237,44 @@ $(function () {
     
 
     
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon-refresh.min.js" async="async"></script>
+    
 
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
 
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
+    <script type="text/javascript">
+        window.onload = function(){
+            //屏蔽键盘事件
+            document.onkeydown = function (){
+                var e = window.event || arguments[0];
+                //F12
+                if(e.keyCode == 123){
+                    return false;
+                    //Ctrl+Shift+I
+                }else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)){
+                    return false;
+                    //Shift+F10
+                }else if((e.shiftKey) && (e.keyCode == 121)){
+                    return false;
+                    //Ctrl+U
+                }else if((e.ctrlKey) && (e.keyCode == 85)){
+                    return false;
+                }
+            };
+            //屏蔽鼠标右键
+            document.oncontextmenu = function (){
+                return false;
+            }
+        }
+    </script>
 </body>
 
 </html>
